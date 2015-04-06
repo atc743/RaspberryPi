@@ -21,8 +21,8 @@ time = 0
 while 1:
 	sleep(1)
 	if GPIO.input(11):
-		time = (time + 1)
-		print('button is pressed for'+str(time)+'seconds')
+		(time = time + 1)
+		print('button is pressed for '+str(time)+' seconds')
 	elif time != 0:
 			if time > 10 and time < 60:
 				printThrone = 'The King has been sitting on the throne for '+str(time)+' seconds.'
